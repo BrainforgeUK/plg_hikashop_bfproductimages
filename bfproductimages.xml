@@ -55,5 +55,8 @@
 		</fieldset>
 	  </fields>
 	</config>
-	
+
+	<updateservers>
+		<server type="extension" priority="1" name="Product Image Slideshow for Hikashop by BrainforgeUK">https://brainforge.co.uk/media/com_bfupdater/plg_hikashop_bfproductimages.xml</server>
+	</updateservers>
 </extension>
