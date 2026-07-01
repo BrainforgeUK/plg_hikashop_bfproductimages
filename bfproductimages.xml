@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" method="upgrade" group="hikashop" client="site">
+<extension version="5.0.0" type="plugin" method="upgrade" group="hikashop" client="site">
 	<name>Brainforge Product Image Slideshow for Hikashop</name>
 	<author>Jonathan Brain</author>
 	<creationDate>November 2016</creationDate>
-	<copyright>Copyright (C) 2016 brainforge. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2016-2026 brainforge. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>team@brainforge.co.uk</authorEmail>
 	<authorUrl>www.brainforge.co.uk</authorUrl>
-	<version>0.0.2</version>
+	<version>1.0.0</version>
 	<description>Plugin which creates product image slideshow for product listing.</description>
 
 	<files>
 		<filename plugin="bfproductimages">bfproductimages.php</filename>
 		<filename>bfproductimages.js</filename>
 		<filename>bfproductimages.css</filename>
-		<filename>index.html</filename>
         <folder>fields</folder>
 	</files>
 
@@ -55,10 +54,5 @@
 		</fieldset>
 	  </fields>
 	</config>
-
-	<updateservers>
-		<server type="extension" priority="1" name="Product Image Slideshow for Hikashop by BrainforgeUK">
-			https://brainforge.co.uk/component/bfupdater?element=plg_hikashop_bfproductimages.xml
-		</server>
-	</updateservers>
+	
 </extension>

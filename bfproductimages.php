@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright	Copyright (C) 2016 brainforge (www.brainforge.co.uk). All rights reserved.
+ * @copyright	Copyright (C) 2016-2026 brainforge (www.brainforge.co.uk). All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -47,7 +47,7 @@ class plgHikashopBFproductImages extends JPlugin {
   }
 
   public function onHikashopBeforeDisplayView(&$view) {
-    if (JFactory::getApplication()->isSite()) {
+    if (JFactory::getApplication()->isClient('site')) {
       switch(@$view->ctrl) {
         case null:
         case '':
@@ -60,12 +60,12 @@ class plgHikashopBFproductImages extends JPlugin {
       }
     }
 
-    if (JFactory::getApplication()->isAdmin()) {
+    if (JFactory::getApplication()->isClient('administrator')) {
     }
   }
   
   public function onHikashopAfterDisplayView(&$view) {
-    if (JFactory::getApplication()->isSite()) {
+    if (JFactory::getApplication()->isClient('site')) {
       if (!empty(self::$_views)) {
         switch(array_pop(self::$_views)) {
           case 'product':
